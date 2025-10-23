@@ -1,0 +1,50 @@
+🔹 Core Classes
+Main – (entry point, no superclass)
+
+TimeManager – (no superclass)
+
+EventCalendar – (no superclass)
+
+🔹 Event System
+Event – abstract class
+
+EnergyGenerationEvent – extends Event
+
+EnergyConsumptionEvent – extends Event
+
+DailySummaryEvent – extends Event
+
+MonthlyBillingEvent – extends Event
+
+🔹 Entities (Agents)
+Entity – abstract class
+
+House – extends Entity
+
+Factory – extends Entity
+
+EV – extends Entity
+
+🔹 Energy Sources
+EnergySource – interface
+
+SolarEnergy – implements EnergySource
+
+WindEnergy – implements EnergySource
+
+HydroEnergy – implements EnergySource
+
+🔹 Grid Logic
+SmartGridManager – (no superclass)
+
+🔹 Weather System
+WeatherStation – (no superclass, acts as Observable)
+
+WeatherObserver – interface
+
+SolarEnergy – implements WeatherObserver
+
+WindEnergy – implements WeatherObserver
+
+🔹 Custom Exceptions
+InvalidEnergyValueException – extends Exception
